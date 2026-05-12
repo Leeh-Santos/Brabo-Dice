@@ -4,3 +4,31 @@ use chalink random shit
 
 nft givies you more tries, and then GETS BURNED
 
+
+ staking.js:533  
+  new ethers.JsonRpcProvider('https://mainnet.base.org')
+  The free public Base RPC has rate limits and zero reliability guarantees. If it goes down, your app shows broken stats to every visitor. Get a free
+   Alchemy or QuickNode key and use that instead. 
+
+
+─┼──────────────────────────┼───────────────────────────────────────────────────────────────────┤
+  │ Build                │ Vanilla JS + CDN imports │ Vite + React/Next.js + TypeScript                                 │
+  ├──────────────────────┼──────────────────────────┼───────────────────────────────────────────────────────────────────┤
+  │ Wallet connection    │ Hand-rolled modal        │ RainbowKit or ConnectKit (handles EIP-6963, 300+ wallets, mobile) │
+  ├──────────────────────┼──────────────────────────┼───────────────────────────────────────────────────────────────────┤
+  │ Contract interaction │ Raw ethers.js            │ wagmi + viem (typed hooks, caching, reactivity built in)          │
+  ├──────────────────────┼──────────────────────────┼───────────────────────────────────────────────────────────────────┤
+  │ Token approval       │ MaxUint256 infinite      │ Exact amount, or EIP-2612 permit() (gasless) if supported         │
+  ├──────────────────────┼──────────────────────────┼───────────────────────────────────────────────────────────────────┤
+  │ Data updates         │ setInterval polling      │ Event subscriptions via WebSocket provider                        │
+  ├──────────────────────┼──────────────────────────┼───────────────────────────────────────────────────────────────────┤
+  │ RPC                  │ Free public endpoint     │ Alchemy/QuickNode with API key                                    │
+  ├──────────────────────┼──────────────────────────┼───────────────────────────────────────────────────────────────────┤
+  │ Type safety          │ None                     │ wagmi CLI generates typed hooks from ABI                          │
+
+
+  └──────────────────────┴──────────────────────────┴───────────────────────────────────────────────────────────────────┘
+ migrate to wagmi, viem  + RainbowKit + Vite when you build v2 — it will save you a lot of the manual work you're doing now (wallet detection, chain switching,
+   polling, etc.) 
+
+   
