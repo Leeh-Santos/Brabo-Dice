@@ -12,6 +12,7 @@ contract BraboDice is VRFConsumerBaseV2Plus {
     uint16 private constant REQUEST_CONFIRMATIONS = 3;
     uint32 private constant NUM_WORDS = 1;
 
+    uint256 public lastResult;
     // ── State ───────────────────────────────────────────────────────────────
     mapping(uint256 requestId => address roller) public s_rollers;
     mapping(uint256 requestId => uint256 result) public s_results;
@@ -55,6 +56,7 @@ contract BraboDice is VRFConsumerBaseV2Plus {
     function fulfillRandomWords(uint256 requestId, uint256[] calldata randomWords) internal override {
         uint256 result = (randomWords[0] % 6) + 1; // 1-6
         s_results[requestId] = result;
+        lastResult = result;
         emit DiceResult(requestId, s_rollers[requestId], result);
     }
 }
