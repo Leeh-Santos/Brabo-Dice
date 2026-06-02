@@ -42,3 +42,26 @@ nft givies you more tries, and then GETS BURNED
 
    Code4rena (C4)
    Sherlock
+
+
+  BraboDice.sol — Chainlink VRF v2.5 (subscription model)
+  
+  Rolling dice is a 2-step async flow because VRF randomness arrives in a callback:
+
+  1. rollDice() — anyone calls this; it sends a randomness request to Chainlink and emits DiceRolled(requestId, roller).
+  2. fulfillRandomWords() — Chainlink calls this automatically after a few blocks; it maps the raw random to 1–6 and emits DiceResult(requestId, roller, result).
+
+  You read the outcome from s_results[requestId] or listen for the DiceResult event.
+
+  ---
+  To deploy you'll need:
+  
+  ┌────────────────┬─────────────────────────────────┬────────────────────────────────────────────────────────────────────┐
+  │   Parameter    │           What it is            │                         Example (Sepolia)                          │
+  ├────────────────┼─────────────────────────────────┼────────────────────────────────────────────────────────────────────┤
+  │ vrfCoordinator │ Chainlink VRF coordinator       │ 0x9DdfaCa8183c41ad55329BdeeD9F6A8d53168B1                          │
+  ├────────────────┼─────────────────────────────────┼────────────────────────────────────────────────────────────────────┤
+  │ subscriptionId │ Your funded VRF subscription ID │ from vrf.chain.link                                                │
+  ├────────────────┼─────────────────────────────────┼────────────────────────────────────────────────────────────────────┤
+  │ keyHash        │ Gas lane (30 gwei on Sepolia)   │ 0x787d74caea10b2b357790d5b5247c2f63d1d91572a9846f780606e4d953677ae │
+  └────────────────┴─────────────────────────────────┴────────────────────────────────────────────────────────────────────┘
