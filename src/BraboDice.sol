@@ -13,6 +13,7 @@ contract BraboDice is VRFConsumerBaseV2Plus {
     uint32 private constant NUM_WORDS = 1;
 
     uint256 public lastResult;
+    uint256 public pot;
     // ── State ───────────────────────────────────────────────────────────────
     mapping(uint256 requestId => address roller) public s_rollers;
     mapping(uint256 requestId => uint256 result) public s_results;
