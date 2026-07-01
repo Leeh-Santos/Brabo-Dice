@@ -33,8 +33,12 @@ nft givies you more tries, and then GETS BURNED
 
    
 
+viem Public Client   (reads)
+viem Wallet Client   (writes)
 
 
+ wagmi hooks (state + caching handled)
+ wagmi auto-refetches (TanStack Query)
 
 
    Damn Vulnerable DeFi
