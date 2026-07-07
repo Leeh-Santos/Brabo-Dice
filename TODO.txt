@@ -73,7 +73,21 @@ viem Wallet Client   (writes)
 
 
 
-
-
 nft to burn and get another chance
 10% for me 10% own liquidity, rest goes to pot
+
+
+
+
+
+Beyond Foundry's built-in fuzzing, get comfortable with Slither (static analysis), 
+Echidna (property-based fuzzing), and at least conversational familiarity with formal verification
+ — Certora, Halmos, and KEVM are the tools teams use for high-value contracts,
+  with formal verification mathematically proving contract behavior matches specification. 
+  Being able to say "I write invariant tests and run Slither in CI" gets you past a lot of screens. 
+
+
+  ERC-4337 Pair that with EIP-7702 (which you've already researched) and you're aligned with where wallet UX is going
+   — there's real demand for people who understand smart accounts, paymasters, and bundlers.
+
+   (viem + wagmi + RainbowKit, on Next.js/React)
