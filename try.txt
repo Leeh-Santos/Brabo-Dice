@@ -1,15 +1,31 @@
-fdddddddddddsdfd
-sdf
-sdv
-bgner
-ghjgm
-fghfm
-ngf
-hjmhg
-fdhfjgmh
-hgfh
-fnmgngf
-hfngmn
-ghngm
-nhghfngm
-ghjgmfn
+Passo 1: Depositar as Stablecoins no Curve FinanceO objetivo deste passo é colocar o capital a
+ trabalhar e obter o "comprovativo de depósito" (o token LP).Aceda ao site oficial do Curve Finance.Ligue a 
+ sua carteira Web3 (ex: MetaMask, Rabby) na rede pretendida (ex: Ethereum Mainnet, Arbitrum, Polygon, Base).
+ Escolha uma pool de stablecoins (ex: a famosa 3pool de DAI/USDC/USDT, ou uma pool mais recente).
+ Deposite as suas stablecoins. Pode depositar apenas uma delas (ex: apenas USDC) ou uma mistura de várias; 
+ o Curve equilibra o depósito automaticamente.Atenção crucial: No momento do depósito, o site vai perguntar se
+  deseja apenas fazer Deposit ou Deposit & Stake. Escolha apenas "Deposit".Em troca, receberá na sua carteira os 
+  tokens de LP (Liquidity Provider tokens), que representam a sua fatia daquela pool.Passo 2: Levar os Tokens LP para 
+  o Convex FinanceEm vez de fazer o stake desses tokens no próprio Curve (o que daria um APY básico), vai usá-los no
+   Convex para extrair o rendimento máximo.Aceda ao site oficial do Convex Finance.Ligue a mesma carteira Web3 e
+    certifique-se de que está na mesma rede onde fez o depósito no Curve.Vá à secção "Stake" ou "Pools" e procure
+     exatamente pela mesma pool onde depositou no Curve (o Convex deteta automaticamente os tokens LP que tem na 
+     carteira).Clique em "Approve" (para dar permissão ao Convex para movimentar os seus tokens) e depois em 
+     "Deposit and Stake".Como é que o rendimento é gerado e multiplicado?A partir do momento em que o seu depósito 
+     está concluído no Convex, o seu capital passa a acumular quatro fontes de rendimento simultâneas:Taxas de Swap 
+     da Pool: Uma percentagem de cada troca que os utilizadores fazem no Curve naquela pool (paga nas próprias stablecoins).
+     Emissões de CRV Base: A recompensa normal do Curve.CRV Boosted (O Multiplicador): O Convex usa os milhões de tokens 
+     Curve que tem bloqueados para aplicar o multiplicador máximo (até 2.5x) sobre as recompensas de CRV de todos os seus
+      utilizadores.Tokens CVX: O Convex oferece adicionalmente o seu próprio token nativo (CVX) como um bónus por usar a 
+      plataforma.Passo 4: Recolher e Otimizar os Lucros (Claim)O rendimento não vai diretamente para o seu saldo de
+       stablecoins; acumula-se no painel do Convex.Periodicamente (semanal ou mensalmente, dependendo do custo das 
+       taxas de rede), vá à aba "Claim" no Convex.Irá ver o saldo acumulado de CRV e CVX. Clique em "Claim Rewards"
+        para transferir esses tokens para a sua carteira.Para fechar o ciclo: Para que o seu rendimento se transforme
+         em juro composto real de stablecoins, terá de ir a uma corretora descentralizada (DEX) e vender os tokens 
+         CRV e CVX recebidos de volta por USDC/USDT, reiniciando o processo se assim desejar.(Nota de eficiência: 
+         Se quiser automatizar este Passo 4 por completo sem ter de pagar taxas de rede para recolher e vender os 
+         tokens manualmente, pode usar agregadores como o Beefy Finance. O Beefy faz exatamente estes passos pelo 
+         utilizador, recolhe os prémios automaticamente várias vezes ao dia e reinstala-os na pool, gerando a APY
+          máxima em juro composto automático).Para o ajudar a planear os custos, em qual rede/blockchain (ex: 
+          Ethereum, Arbitrum, Base) está a pensar executar esta estratégia? As taxas de transação (gas)  
+          mudam drasticamente de uma rede para a outra.

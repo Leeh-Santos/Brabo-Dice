@@ -90,4 +90,4 @@ Echidna (property-based fuzzing), and at least conversational familiarity with f
   ERC-4337 Pair that with EIP-7702 (which you've already researched) and you're aligned with where wallet UX is going
    — there's real demand for people who understand smart accounts, paymasters, and bundlers.
 
-   (viem + wagmi + RainbowKit, on Next.js/React)
+   (viem + wagmi + RainbowKit, on node .js/React)
