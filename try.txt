@@ -43,3 +43,23 @@ Passo 1: Depositar as Stablecoins no Curve FinanceO objetivo deste passo é colo
 OTC / bond mechanics for treasury operations. If the treasury needs to convert BRB to stables, don't touch the pool — sell BRB directly to willing buyers at a small discount with vesting (Olympus-style bonds, or plain OTC deals). Zero pool impact, and the discount is usually cheaper than the slippage plus the signal damage of on-chain dumping.
 Protocol-owned liquidity. Related but distinct from "add more LP": if the protocol owns the V3 position, swap fees from your own users' churn flow back to the treasury, partially refunding the slippage cost. Doesn't remove impact, but recycles it.
 Don't convert at all. The design from last message — principal stays BRB, only harvested yield (a tiny amount) ever swaps. A few hundred dollars of USDS→BRB weekly is invisible to any pool. This is the version where the slippage question just… dissolves.
+
+
+
+
+
+
+
+
+
+
+cxcx
+stablecoinsac
+asc
+as
+cas
+cadaasc
+ascasc
+ascascca
+secçãoasc
+asc
