@@ -6,3 +6,13 @@ At a threshold (~$69k mcap on pump.fun), the accumulated ETH plus a token alloca
 
 Replace fund() with a bonding curve sale. Fixed formula, price rises with cumulative tokens sold, ETH accumulates in a reserve you later use to seed real liquidity.
  Users get zero slippage and a published price. No pool read, no oracle, no arbitrage.
+
+
+ 	AMM pool	Bonding curve
+Counterparty	Other LPs' deposited tokens	The contract itself
+Price	x·y = k from reserves	f(totalSold)
+Tokens come from	Pre-deposited liquidity	Minted or treasury on demand
+Seed capital needed	Yes	No
+Slippage	Yes	None — price is deterministic
+
+DIRECLY THRU SMART contract
