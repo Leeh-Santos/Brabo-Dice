@@ -2,3 +2,7 @@ Token starts on a mathematical curve, not a pool. Price is a pure function of su
 Zero slippage — the curve is the price. No reserves to imbalance.
 Every buy adds ETH to a reserve. The reserve grows as people buy.
 At a threshold (~$69k mcap on pump.fun), the accumulated ETH plus a token allocation auto-seeds a real Uniswap/Raydium pool, and the LP gets burned.
+
+
+Replace fund() with a bonding curve sale. Fixed formula, price rises with cumulative tokens sold, ETH accumulates in a reserve you later use to seed real liquidity.
+ Users get zero slippage and a published price. No pool read, no oracle, no arbitrage.
