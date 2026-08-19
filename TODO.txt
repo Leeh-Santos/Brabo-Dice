@@ -16,3 +16,49 @@ Seed capital needed	Yes	No
 Slippage	Yes	None — price is deterministic
 
 DIRECLY THRU SMART contract
+
+
+
+
+
+
+
+BOND CURVE:
+
+
+The lifecycle
+
+Phase 1 — curve. Total supply is fixed at deploy, say 1B tokens, split into two buckets: ~800M sellable on the curve, ~200M reserved for the future LP. Buyers send ETH, the contract prices from f(totalSold) and delivers tokens. ETH piles up in the contract. No pool exists yet.
+
+Phase 2 — graduation. A threshold trips (pump.fun uses ~$69k market cap, which lands when the curve has sold its allocation and accumulated ~85 SOL). The contract then, in one transaction:
+
+Takes the accumulated ETH
+Takes the reserved 200M tokens
+Creates the Uniswap pool with both
+Burns the LP NFT
+
+That last step is the point. Burning makes the liquidity permanently unremovable — nobody can rug it, not even the deployer. It's the credibility guarantee the whole model runs on.
+
+Phase 3. Curve is dead, pool is live, normal token from here.
+
+Two things worth knowing
+
+The initial pool price must equal the final curve price. If the curve ends at 0.0001 ETH/token, you seed the pool at exactly that ratio — otherwise the first trader arbitrages the gap. So the reserved token count isn't arbitrary; it's derived from accumulated_ETH ÷ final_curve_price.
+
+Some curves let you sell back. Pump.fun does — you can exit to the curve before graduation, at a slight discount. That gives buyers an exit before there's a pool, which matters for trust. Optional, but it's why people are willing to buy at token #1.
+
+
+
+3 types of onding 
+
+Linear — price = m × totalSold + b
+
+Simplest to reason about, easy to explain to buyers, but the price ratio from first to last buyer is modest, so there's less reward for showing up early.
+
+Exponential — price = b × e^(k × totalSold)
+
+Steep late-stage pricing, strong early-buyer advantage. Harder to implement safely in Solidity (needs a fixed-point exp — PRBMath or solmate's wadExp) and overflow-prone if you get the scaling wrong.
+
+Constant product — price = k / (supply_remaining)², the pump.fun approach
+
+Uses virtual reserves: x · y = k where x and y are bookkeeping numbers rather than deposited assets. Cheap to compute, well-tested, and it graduates into a Uniswap pool with matching math, so the price curve is continuous across the transition. That last property is why pump.fun uses it.
