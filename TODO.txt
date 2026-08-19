@@ -62,3 +62,8 @@ Steep late-stage pricing, strong early-buyer advantage. Harder to implement safe
 Constant product — price = k / (supply_remaining)², the pump.fun approach
 
 Uses virtual reserves: x · y = k where x and y are bookkeeping numbers rather than deposited assets. Cheap to compute, well-tested, and it graduates into a Uniswap pool with matching math, so the price curve is continuous across the transition. That last property is why pump.fun uses it.
+
+
+One thing to decide
+
+Does the curve mint, or sell from treasury?
