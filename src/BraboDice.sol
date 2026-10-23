@@ -61,3 +61,4 @@ contract BraboDice is VRFConsumerBaseV2Plus {
         emit DiceResult(requestId, s_rollers[requestId], result);
     }
 }
+    
