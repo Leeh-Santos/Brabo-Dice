@@ -67,3 +67,20 @@ Uses virtual reserves: x · y = k where x and y are bookkeeping numbers rather t
 One thing to decide
 
 Does the curve mint, or sell from treasury?
+
+
+
+even // odd dice
+
+max 3 days then revert.
+
+lobby with available matches.
+
+
+HOUSE DEGAULT PLAY 
+
+
+
+
+
+
