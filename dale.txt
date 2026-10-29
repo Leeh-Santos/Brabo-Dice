@@ -1,100 +1,20 @@
-add var of total
 
-use chalink random shit
-
-nft givies you more tries, and then GETS BURNED
+   deployed on Base mainnet at 0x5C3bb2E6f3019Bd15b244464548336f90F92AF8a 
 
 
- staking.js:533  
-  new ethers.JsonRpcProvider('https://mainnet.base.org')
-  The free public Base RPC has rate limits and zero reliability guarantees. If it goes down, your app shows broken stats to every visitor. Get a free
-   Alchemy or QuickNode key and use that instead. 
-
-
-─┼──────────────────────────┼───────────────────────────────────────────────────────────────────┤
-  │ Build                │ Vanilla JS + CDN imports │ Vite + React/Next.js + TypeScript                                 │
-  ├──────────────────────┼──────────────────────────┼───────────────────────────────────────────────────────────────────┤
-  │ Wallet connection    │ Hand-rolled modal        │ RainbowKit or ConnectKit (handles EIP-6963, 300+ wallets, mobile) │
-  ├──────────────────────┼──────────────────────────┼───────────────────────────────────────────────────────────────────┤
-  │ Contract interaction │ Raw ethers.js            │ wagmi + viem (typed hooks, caching, reactivity built in)          │
-  ├──────────────────────┼──────────────────────────┼───────────────────────────────────────────────────────────────────┤
-  │ Token approval       │ MaxUint256 infinite      │ Exact amount, or EIP-2612 permit() (gasless) if supported         │
-  ├──────────────────────┼──────────────────────────┼───────────────────────────────────────────────────────────────────┤
-  │ Data updates         │ setInterval polling      │ Event subscriptions via WebSocket provider                        │
-  ├──────────────────────┼──────────────────────────┼───────────────────────────────────────────────────────────────────┤
-  │ RPC                  │ Free public endpoint     │ Alchemy/QuickNode with API key                                    │
-  ├──────────────────────┼──────────────────────────┼───────────────────────────────────────────────────────────────────┤
-  │ Type safety          │ None                     │ wagmi CLI generates typed hooks from ABI                          │
-
-
-  └──────────────────────┴──────────────────────────┴───────────────────────────────────────────────────────────────────┘
- migrate to wagmi, viem  + RainbowKit + Vite when you build v2 — it will save you a lot of the manual work you're doing now (wallet detection, chain switching,
-   polling, etc.) 
-
-   add var of total
-
-use chalink random shit
-
-nft givies you more tries, and then GETS BURNED
-
-
- staking.js:533  
-  new ethers.JsonRpcProvider('https://mainnet.base.org')
-  The free public Base RPC has rate limits and zero reliability guarantees. If it goes down, your app shows broken stats to every visitor. Get a free
-   Alchemy or QuickNode key and use that instead. 
-
-
-─┼──────────────────────────┼───────────────────────────────────────────────────────────────────┤
-  │ Build                │ Vanilla JS + CDN imports │ Vite + React/Next.js + TypeScript                                 │
-  ├──────────────────────┼──────────────────────────┼───────────────────────────────────────────────────────────────────┤
-  │ Wallet connection    │ Hand-rolled modal        │ RainbowKit or ConnectKit (handles EIP-6963, 300+ wallets, mobile) │
-  ├──────────────────────┼──────────────────────────┼───────────────────────────────────────────────────────────────────┤
-  │ Contract interaction │ Raw ethers.js            │ wagmi + viem (typed hooks, caching, reactivity built in)          │
-  ├──────────────────────┼──────────────────────────┼───────────────────────────────────────────────────────────────────┤
-  │ Token approval       │ MaxUint256 infinite      │ Exact amount, or EIP-2612 permit() (gasless) if supported         │
-  ├──────────────────────┼──────────────────────────┼───────────────────────────────────────────────────────────────────┤
-  │ Data updates         │ setInterval polling      │ Event subscriptions via WebSocket provider                        │
-  ├──────────────────────┼──────────────────────────┼───────────────────────────────────────────────────────────────────┤
-  │ RPC                  │ Free public endpoint     │ Alchemy/QuickNode with API key                                    │
-  ├──────────────────────┼──────────────────────────┼───────────────────────────────────────────────────────────────────┤
-  │ Type safety          │ None                     │ wagmi CLI generates typed hooks from ABI                          │
-
-
-  └──────────────────────┴──────────────────────────┴───────────────────────────────────────────────────────────────────┘
- migrate to wagmi, viem  + RainbowKit + Vite when you build v2 — it will save you a lot of the manual work you're doing now (wallet detection, chain switching,
-   polling, etc.) 
-
-   add var of total
-
-use chalink random shit
-
-nft givies you more tries, and then GETS BURNED
-
-
- staking.js:533  
-  new ethers.JsonRpcProvider('https://mainnet.base.org')
-  The free public Base RPC has rate limits and zero reliability guarantees. If it goes down, your app shows broken stats to every visitor. Get a free
-   Alchemy or QuickNode key and use that instead. 
-
-
-─┼──────────────────────────┼───────────────────────────────────────────────────────────────────┤
-  │ Build                │ Vanilla JS + CDN imports │ Vite + React/Next.js + TypeScript                                 │
-  ├──────────────────────┼──────────────────────────┼───────────────────────────────────────────────────────────────────┤
-  │ Wallet connection    │ Hand-rolled modal        │ RainbowKit or ConnectKit (handles EIP-6963, 300+ wallets, mobile) │
-  ├──────────────────────┼──────────────────────────┼───────────────────────────────────────────────────────────────────┤
-  │ Contract interaction │ Raw ethers.js            │ wagmi + viem (typed hooks, caching, reactivity built in)          │
-  ├──────────────────────┼──────────────────────────┼───────────────────────────────────────────────────────────────────┤
-  │ Token approval       │ MaxUint256 infinite      │ Exact amount, or EIP-2612 permit() (gasless) if supported         │
-  ├──────────────────────┼──────────────────────────┼───────────────────────────────────────────────────────────────────┤
-  │ Data updates         │ setInterval polling      │ Event subscriptions via WebSocket provider                        │
-  ├──────────────────────┼──────────────────────────┼───────────────────────────────────────────────────────────────────┤
-  │ RPC                  │ Free public endpoint     │ Alchemy/QuickNode with API key                                    │
-  ├──────────────────────┼──────────────────────────┼───────────────────────────────────────────────────────────────────┤
-  │ Type safety          │ None                     │ wagmi CLI generates typed hooks from ABI                          │
-
-
-  └──────────────────────┴──────────────────────────┴───────────────────────────────────────────────────────────────────┘
- migrate to wagmi, viem  + RainbowKit + Vite when you build v2 — it will save you a lot of the manual work you're doing now (wallet detection, chain switching,
-   polling, etc.) 
-
-   
+┌─────────────────────────┬────────────────────────────────────────────────────────────────────┐
+│                         │                                                                    │
+├─────────────────────────┼────────────────────────────────────────────────────────────────────┤
+│ Deploy transaction      │ 0xaaf5ef1ec8becae44f6aa758959c3ad0164507ccb655846deb51ea4dd148e741 │
+├─────────────────────────┼────────────────────────────────────────────────────────────────────┤
+│ addConsumer transaction │ 0x6a09b1a7565598ae32daae36f4c597b50a36d2eabbb558c668b4d9454ce69b7a │
+├─────────────────────────┼────────────────────────────────────────────────────────────────────┤
+│ Betting token           │ 0x07f6…b1a2 ($BRB)                                                 │
+├─────────────────────────┼────────────────────────────────────────────────────────────────────┤
+│ VRF coordinator         │ 0xd5D5…F634                                                        │
+├─────────────────────────┼────────────────────────────────────────────────────────────────────┤
+│ Contract owner          │ 0x3a9d…a0d9 (your wallet)                                          │
+├─────────────────────────┼────────────────────────────────────────────────────────────────────┤
+│ Cost                    │ about 0.000009 ETH (0.000234 ETH left)                             │
+└─────────────────────────┴────────────────────────────────────────────────────────────────────┘
+so 
