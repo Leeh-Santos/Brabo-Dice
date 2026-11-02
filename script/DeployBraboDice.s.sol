@@ -36,7 +36,7 @@ contract DeployBraboDice is Script {
     address constant VRF_COORDINATOR = 0xd5D517aBE5cF79B7e95eC98dB0f0277788aFF634;
 
     // 30 gwei gas lane key hash on Base mainnet.
-    bytes32 constant KEY_HASH = 0xdc2f87677b01473c763cb0aee938ed3341512f6057324a584e5944e786144d70;
+    bytes32 constant KEY_HASH = 0x00b81b5a830cb0a4009fbd8904de511e28631e62ce5ad231373d3cdad373ccab;
 
     error DeployBraboDice__WrongChain(uint256 chainId);
     error DeployBraboDice__NoCodeAt(address target);
